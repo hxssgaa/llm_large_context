@@ -1,5 +1,5 @@
 python3 -m llamabpt.train \
-    --mesh_dim='1,1,4,8' \
+    --mesh_dim='1,1,1,32' \
     --dtype='bf16' \
     --total_steps=480000 \
     --log_freq=200 \
