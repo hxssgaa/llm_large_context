@@ -16,7 +16,6 @@ python3 -m llamabpt.train \
     --optimizer.adamw_optimizer.end_lr=1.5e-5 \
     --optimizer.adamw_optimizer.lr_warmup_steps=2000 \
     --optimizer.adamw_optimizer.lr_decay_steps=480000 \
-    --train_dataset.type='json' \
     --train_dataset.text_processor.fields='text' \
     --train_dataset.type=huggingface \
     --train_dataset.huggingface_dataset.path='mc4' \
