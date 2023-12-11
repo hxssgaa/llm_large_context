@@ -7,8 +7,8 @@ python3 -m llamabpt.train \
     --save_milestone_freq=1000 \
     --load_llama_config='7b' \
     --update_llama_config="dict(max_sequence_length=2097152,scan_attention=True,scan_query_chunk_size=2048,scan_key_chunk_size=4096,remat_attention='nothing_saveable',scan_mlp=True,scan_mlp_chunk_size=2048,remat_mlp='nothing_saveable',remat_block='nothing_saveable',scan_layers=True,attention_type='ring_blockwise',param_scan_axis=0,mesh_dim='1,1,4,8')" \
-    --load_dataset_state='llama2_7b_easylm' \
-    --load_checkpoint='params::gs://hxtpu_bucket/' \
+    --load_dataset_state='' \
+    --load_checkpoint='params::gs://hxtpu_bucket/llama2_7b_easylm' \
     --tokenizer.vocab_file="gs://hxtpu_bucket/llama2_tokenizer.model" \
     --optimizer.type='adamw' \
     --optimizer.adamw_optimizer.weight_decay=0.1 \
